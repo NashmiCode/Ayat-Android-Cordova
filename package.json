@@ -1,0 +1,20 @@
+{
+  "name": "ayathub-ayat",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ayat Islamic reading application for Android",
+  "scripts": {
+    "android:add": "cordova platform add android@15.1.0",
+    "android:build": "cordova build android --debug",
+    "android:check": "cordova requirements android"
+  },
+  "devDependencies": {
+    "cordova": "13.0.0"
+  },
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {}
+  }
+}
