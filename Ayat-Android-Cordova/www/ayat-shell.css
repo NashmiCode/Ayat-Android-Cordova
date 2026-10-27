@@ -1,0 +1,14 @@
+/* AYAT responsive Android/PWA shell */
+:root { --ayat-gold:#d6ad50; --ayat-deep:#082d24; }
+html { -webkit-tap-highlight-color: transparent; scroll-behavior:smooth; }
+body { padding-bottom:calc(88px + env(safe-area-inset-bottom, 0px)) !important; }
+button, a, input, select { touch-action:manipulation; }
+.ayat-bottom-nav { position:fixed; z-index:2147483000; bottom:0; left:50%; transform:translateX(-50%); width:min(100%,680px); min-height:68px; padding:7px 8px calc(7px + env(safe-area-inset-bottom,0px)); display:flex; gap:4px; align-items:stretch; direction:rtl; border:1px solid rgba(218,179,79,.28); border-bottom:0; border-radius:19px 19px 0 0; background:rgba(6,42,32,.97); box-shadow:0 -10px 42px rgba(0,0,0,.24); font-family:system-ui,'Cairo',sans-serif; }
+.ayat-bottom-nav a { flex:1; color:#d9eadf; display:flex; flex-direction:column; text-decoration:none; align-items:center; justify-content:center; gap:2px; border-radius:12px; font-size:11px; font-weight:700; line-height:1.35; white-space:nowrap; transition:background .2s, color .2s, transform .2s; }
+.ayat-bottom-nav a span { font-size:22px; line-height:1.25; }
+.ayat-bottom-nav a[aria-current="page"] { color:#fff4c6; background:rgba(214,173,80,.22); }
+.ayat-bottom-nav a:active { transform:scale(.96); }
+.ayat-connection-banner { position:fixed; z-index:2147483200; left:50%; transform:translateX(-50%); bottom:calc(84px + env(safe-area-inset-bottom,0px)); max-width:min(92%,560px); width:max-content; padding:11px 16px; color:#fff; background:#7e3326; box-shadow:0 6px 28px #0005; font-size:13px; font-family:system-ui,sans-serif; border-radius:12px; direction:rtl; text-align:center; }
+@media (max-width:375px) { .ayat-bottom-nav a { font-size:10px; } .ayat-bottom-nav a span { font-size:20px; } }
+@media (min-width:800px) { body { padding-bottom:95px!important; } .ayat-bottom-nav { border-radius:22px; bottom:12px; border-bottom:1px solid rgba(218,179,79,.28); } }
+@media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; transition:none!important; animation:none!important; } }
